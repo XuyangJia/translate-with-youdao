@@ -1,0 +1,16 @@
+{
+  "name": "translate-with-youdao",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "fix": "standard --fix",
+    "start": "node app/index.js"
+  },
+  "dependencies": {
+    "request": "^2.88.0",
+    "exceljs": "^1.12.1"
+  },
+  "repository": "git@github.com:XuyangJia/translate-with-youdao.git",
+  "author": "Xuyang Jia <jiaxuyang@outlook.com>",
+  "license": "MIT"
+}
