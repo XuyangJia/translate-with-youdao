@@ -7,8 +7,9 @@
     "start": "node app/index.js"
   },
   "dependencies": {
-    "request": "^2.88.0",
-    "exceljs": "^1.12.1"
+    "exceljs": "^1.12.1",
+    "fs-extra": "^8.0.1",
+    "request": "^2.88.0"
   },
   "repository": "git@github.com:XuyangJia/translate-with-youdao.git",
   "author": "Xuyang Jia <jiaxuyang@outlook.com>",
