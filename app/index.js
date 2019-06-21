@@ -8,19 +8,16 @@ const result = {}
 
 async function singleTranslate (id) {
   const zh = data[id]
+  console.log(zh)
   const en = await translateLib.translate2En(zh)
-  result[id] = { zh, en }
-  console.log(zh, en)
+  console.log(en)
+  return { zh, en }
 }
 
 async function translate () {
-  // await Promise.all(Object.keys(data).forEach(async (key) => {
-  //   await singleTranslate(key)
-  // }))
-  for (let key in data) {
-    // await singleTranslate(key)
-    console.log(key)
-  }
+  Object.keys(data).forEach(async (key) => {
+    result[key] = await singleTranslate(key)
+  })
 }
 
 translate()
